@@ -48,7 +48,7 @@ const prompt = filename =>
 	new Promise(yay => {
 		keypress(process.stdin);
 
-		let active = 0;
+		let active = 1;
 		draw(active, filename);
 
 		process.stdin.on('keypress', function(ch, key) {
